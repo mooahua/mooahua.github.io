@@ -4,6 +4,8 @@
 
 基于 [Hexo](https://hexo.io/) 搭建，使用 Landscape 主题，部署在 GitHub Pages。
 
+博客链接：https://mooahua.github.io/
+
 ## 快速开始
 
 ```bash
