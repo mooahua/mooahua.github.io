@@ -109,7 +109,6 @@ deploy:
 # Sitemap
 sitemap:
   path: sitemap.xml
-  template: ./themes/landscape/source/sitemap.xml
   rel: true
 
 # Feed
