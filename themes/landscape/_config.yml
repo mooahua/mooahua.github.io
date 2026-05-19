@@ -5,6 +5,9 @@
 menu:
   Home: /
   Archives: /archives
+  Categories: /categories
+  Tags: /tags
+  About: /about
 # RSS link
 rss: /atom.xml
 # Path of title banner image of page top
@@ -15,9 +18,8 @@ subtitle:
 # Each name must correspond to the icon name of Fork Awesome
 # https://forkaweso.me/Fork-Awesome/icons/
 links:
-#  github: https://github.com/your_github_account
-#  twitter: https://twitter.com/your_twitter_account
-#  telegram: https://t.me/your_telegram_account
+  github: https://github.com/mooahua
+  email: mailto:your_email@example.com
 
 # ===============
 # Content
@@ -70,8 +72,7 @@ recent_posts_limits: 5
 # ===============
 # Miscellaneous
 # ===============
-# Google Analytics ID
-google_analytics:
+google_analytics: your_google_analytics_tracking_id
 gauges_analytics:
 # Favicon path
 favicon: /favicon.png
@@ -87,13 +88,13 @@ fb_app_id:
 disqus_shortname:
 # valine comment system. https://valine.js.org
 valine:
-  enable: false # if you want use valine,please set this value is true
-  appId:  # leancloud application app id
-  appKey:  # leancloud application app key
-  notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
-  verify: false # valine verify code (true/false)
-  pageSize: 10 # comment list page size
-  avatar: mm # gravatar style https://valine.js.org/#/avatar
-  lang: zh-cn # i18n: zh-cn/en
-  placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail,link #valine comment header info
+  enable: true
+  appId: your_app_id
+  appKey: your_app_key
+  notify: false
+  verify: false
+  pageSize: 10
+  avatar: mm
+  lang: zh-cn
+  placeholder: 请留下你的足迹 ~
+  guest_info: nick,mail,link

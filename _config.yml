@@ -5,20 +5,22 @@
 # Site
 title: 混世阿华的博客
 subtitle: '记录技术与生活'
-description: '混世阿华的技术博客'
+description: '混世阿华的技术博客，记录编程心得、项目经验与生活感悟'
 keywords:
+  - 技术博客
+  - 编程
+  - 生活
 author: 混世阿华
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://mooahua.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false
+  trailing_html: false
 
 # Directory
 source_dir: source
@@ -99,8 +101,24 @@ ignore:
 theme: landscape
 
 # Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repo: https://github.com/mooahua/mooahua.github.io.git
-  branch: main
+  branch: gh-pages
+
+# Sitemap
+sitemap:
+  path: sitemap.xml
+  template: ./themes/landscape/source/sitemap.xml
+  rel: true
+
+# Feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
