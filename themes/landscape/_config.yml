@@ -3,21 +3,22 @@
 # ===============
 # Navigation menu
 menu:
-  Home: /
-  Archives: /archives
+  主页: /
+  归档: /archives
+  标签: /tags
+  关于: /about
 # RSS link
 rss: /atom.xml
 # Path of title banner image of page top
 banner: "images/banner.jpg"
 # Subtitle of page top
-subtitle:
+subtitle: 'STDIN | Think >> /dev/Mind'
 # Header links with icon, specified links will appear at the top right corner of the page
 # Each name must correspond to the icon name of Fork Awesome
 # https://forkaweso.me/Fork-Awesome/icons/
 links:
-#  github: https://github.com/your_github_account
-#  twitter: https://twitter.com/your_twitter_account
-#  telegram: https://t.me/your_telegram_account
+  github: https://github.com/mooahua
+  email: mailto:your-email@example.com
 
 # ===============
 # Content
@@ -32,10 +33,9 @@ fancybox: true
 # ===============
 # Display copyright notice in footer. Please see https://creativecommons.org/choose/ and https://choosealicense.com/
 # You can use html like below.
-# copyright: |-
-#   <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></br>
-#   All website licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></br>
-copyright:
+copyright: |
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a></br>
+  All website licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></br>
 
 # ===============
 # Sidebar
@@ -43,6 +43,7 @@ copyright:
 # Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
 sidebar: right
 # Widgets displaying in sidebar
+# 侧边栏小工具：about(关于), category(分类), tag(标签), tagcloud(标签云), archive(归档), recent_posts(最新文章)
 widgets:
 - about
 - category
@@ -71,7 +72,7 @@ recent_posts_limits: 5
 # Miscellaneous
 # ===============
 # Google Analytics ID
-google_analytics:
+google_analytics: G-XXXXXXXXXX  # 替换为你的 Google Analytics ID
 gauges_analytics:
 # Favicon path
 favicon: /favicon.png
@@ -85,15 +86,16 @@ fb_app_id:
 # ===============
 # Disqus comment system.
 disqus_shortname:
-# valine comment system. https://valine.js.org
+# Valine comment system. https://valine.js.org
+# 推荐使用 Valine 作为国内访问速度更快的评论系统
 valine:
-  enable: false # if you want use valine,please set this value is true
-  appId:  # leancloud application app id
-  appKey:  # leancloud application app key
-  notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
-  verify: false # valine verify code (true/false)
-  pageSize: 10 # comment list page size
-  avatar: mm # gravatar style https://valine.js.org/#/avatar
-  lang: zh-cn # i18n: zh-cn/en
-  placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail,link #valine comment header info
+  enable: false # 启用 Valine 评论请设置为 true
+  appId: ''  # LeanCloud 应用 App ID
+  appKey: ''  # LeanCloud 应用 App Key
+  notify: false # Valine 邮件通知 (true/false) https://github.com/xCss/Valine/wiki
+  verify: false # Valine 验证码 (true/false)
+  pageSize: 10 # 评论列表分页大小
+  avatar: identicon # gravatar 风格 https://valine.js.org/#/avatar
+  lang: zh-cn # 语言：zh-cn/en
+  placeholder: '留下你的评论吧...' # Valine 评论输入框占位符
+  guest_info: nick,mail,link # Valine 评论头部信息

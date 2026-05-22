@@ -5,15 +5,15 @@
 # Site
 title: 混世阿华的博客
 subtitle: '记录技术与生活'
-description: '混世阿华的技术博客'
-keywords:
+description: '混世阿华的技术博客，分享编程心得、技术教程与生活感悟'
+keywords: ['博客', '技术', '编程', 'Hexo', '前端', '后端', '开发']
 author: 混世阿华
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://mooahua.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -46,10 +46,10 @@ future: true
 syntax_highlighter: highlight.js
 highlight:
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 prismjs:
   preprocess: true
   line_number: true
